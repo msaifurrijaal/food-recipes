@@ -8,6 +8,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.bumptech.glide.Glide
 import com.saifurrijaal.yummyfood.R
+import com.saifurrijaal.yummyfood.data.pojo.CategoryList
+import com.saifurrijaal.yummyfood.data.pojo.CategoryMeal
 import com.saifurrijaal.yummyfood.data.pojo.Meal
 import com.saifurrijaal.yummyfood.data.pojo.MealList
 import com.saifurrijaal.yummyfood.data.retrofit.RetrofitInstance
@@ -20,9 +22,12 @@ class HomeViewModel(): ViewModel() {
     private val _randomMeal = MutableLiveData<Meal>()
     val randomMeal : LiveData<Meal> = _randomMeal
 
-    init {
-        getRandomMeal()
-    }
+    private val _popularItems = MutableLiveData<List<CategoryMeal>>()
+    val popularItems : LiveData<List<CategoryMeal>> = _popularItems
+
+//    init {
+//        getRandomMeal()
+//    }
 
     fun getRandomMeal() {
         RetrofitInstance.getApiService().getRandomMeal().enqueue(object : Callback<MealList> {
@@ -37,6 +42,22 @@ class HomeViewModel(): ViewModel() {
 
             override fun onFailure(call: Call<MealList>, t: Throwable) {
                 Log.e("HomeFragment", t.message.toString())
+            }
+        })
+    }
+
+    fun getPopularItems() {
+        RetrofitInstance.getApiService().getPopularItems("Seafood").enqueue(object : Callback<CategoryList> {
+            override fun onResponse(call: Call<CategoryList>, response: Response<CategoryList>) {
+                if (response.isSuccessful) {
+                    _popularItems.value = response.body()!!.meals
+                } else {
+                    Log.e("MainActivity", "onFailure : ${response.message()}")
+                }
+            }
+
+            override fun onFailure(call: Call<CategoryList>, t: Throwable) {
+                Log.e("MainActivity", t.message.toString())
             }
         })
     }

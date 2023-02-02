@@ -1,5 +1,6 @@
 package com.saifurrijaal.yummyfood.data.retrofit
 
+import com.saifurrijaal.yummyfood.data.pojo.CategoryList
 import com.saifurrijaal.yummyfood.data.pojo.MealList
 import retrofit2.Call
 import retrofit2.http.GET
@@ -10,6 +11,10 @@ interface MealApi {
     @GET("random.php")
     fun getRandomMeal(): Call<MealList>
 
-    @GET("lookup.php")
+    @GET("lookup.php?")
     fun getMealDetails(@Query("i") id: String): Call<MealList>
+
+    // hanya contoh aja, sebenere dapet dari berdasarkan category
+    @GET("filter.php?")
+    fun getPopularItems(@Query("c") categoryName: String) :Call<CategoryList>
 }
