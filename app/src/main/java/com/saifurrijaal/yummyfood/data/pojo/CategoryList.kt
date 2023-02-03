@@ -1,5 +1,5 @@
 package com.saifurrijaal.yummyfood.data.pojo
 
 data class CategoryList(
-    val meals: List<CategoryMeal>
+    val categories: List<Category>
 )

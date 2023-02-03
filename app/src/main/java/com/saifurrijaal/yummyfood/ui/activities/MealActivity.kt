@@ -52,7 +52,7 @@ class MealActivity : AppCompatActivity() {
                 binding.tvAreaInfo.text = "Area : ${meal.strArea}"
                 binding.tvContent.text = meal.strInstructions
 
-                youtubeLink = meal.strYoutube
+                youtubeLink = meal.strYoutube.toString()
             }
         })
     }

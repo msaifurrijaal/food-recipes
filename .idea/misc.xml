@@ -4,11 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/font/fonts.xml" value="0.22314814814814815" />
+        <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/activity_category_meals.xml" value="0.2125" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/activity_main.xml" value="0.2125" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/activity_meal.xml" value="0.2125" />
+        <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/category_item.xml" value="0.17910447251321387" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/fragment_categories.xml" value="0.2125" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/fragment_favorit.xml" value="0.2125" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/fragment_home.xml" value="0.2125" />
+        <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/meal_item.xml" value="0.21145833333333333" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/popular_item.xml" value="0.2125" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/menu/bottom_menu.xml" value="0.375" />
       </map>
