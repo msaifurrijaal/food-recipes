@@ -86,6 +86,7 @@ class FavoritFragment : Fragment() {
     private fun observeFavorites() {
         viewModel.allMeal.observe(requireActivity(), Observer {
             favoritesMealsAdapter.differ.submitList(it)
+            Log.d("FavoritFragment", "${it}")
         })
     }
 

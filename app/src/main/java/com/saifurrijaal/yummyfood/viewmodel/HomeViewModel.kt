@@ -33,6 +33,8 @@ class HomeViewModel(application: Application): AndroidViewModel(application) {
         val dao = MealDatabase.getInstance(application).mealDao()
         repository = MealRepository(dao)
         allMeal = repository.allMeals
+
+        // Log.d("HomeViewModel", "${allMeal}")
     }
 
     fun getRandomMeal() {

@@ -13,11 +13,11 @@
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/fragment_home.xml" value="0.2125" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/meal_item.xml" value="0.21145833333333333" />
         <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/layout/popular_item.xml" value="0.2125" />
-        <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/menu/bottom_menu.xml" value="0.375" />
+        <entry key="..\:/CODE/Belajar Android/YummyFood/app/src/main/res/menu/bottom_menu.xml" value="0.2364179037174423" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
